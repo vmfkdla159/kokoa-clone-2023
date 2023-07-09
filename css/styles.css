@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
-@import "variable.css";
 @import "reset.css";
+@import "variable.css";
 /* Components */
 @import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
 /* Screen */
 @import "screen/loginform.css";
 
