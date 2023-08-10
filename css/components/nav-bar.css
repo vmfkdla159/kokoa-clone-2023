@@ -16,27 +16,11 @@
   position: relative;
 }
 .nav__notification {
-  display: flex;
-  background-color: tomato;
-  color: white;
-  width: 27px;
-  height: 27px;
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   bottom: 17px;
   left: 20px;
-  font-weight: 600;
 }
 .nav__ellipsis {
-  display: flex;
-  background-color: tomato;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   bottom: 30px;
   left: 30px;

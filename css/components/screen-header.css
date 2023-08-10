@@ -1,13 +1,21 @@
 .friends-header {
   display: flex;
-  padding: 55px 25px 25px 25px;
+  padding: var(--horizontal-space);
+  padding-top: 55px;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 15px;
 }
 .friends-header__title {
   font-size: 32px;
   font-weight: 600;
 }
-.friends-header__icons span {
+.friends-header__icons i {
   margin-left: 30px;
+}
+
+.friends-header__icons span {
+  position: absolute;
+  top: 55px;
+  right: 20px;
 }
