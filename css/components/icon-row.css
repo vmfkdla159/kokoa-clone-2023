@@ -1,0 +1,49 @@
+.icon-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-row__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90px;
+  height: 70px;
+}
+
+.icon-row__icon i {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.icon-row__icon span {
+  font-weight: 600;
+}
+
+.suggestions-icons {
+  display: flex;
+  margin-top: 10px;
+}
+
+.suggestions-icon {
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.suggestions-icon__image {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  background-color: var(--yellow);
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.suggestions-icon i {
+  font-size: 35px;
+  color: white;
+}

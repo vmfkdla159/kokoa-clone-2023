@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chats-Kokoa Talk</title>
+    <title>settings-Kokoa Talk</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -23,50 +23,46 @@
       </div>
     </div>
 
-    <header class="friends-header">
-      <h1 class="friends-header__title">Chats</h1>
-      <div class="friends-header__icons">
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="more.html">
+          <i class="fa-solid fa-chevron-left"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Settings</h1>
+      </div>
+      <div class="alt-header__column">
         <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-        <i class="fa-regular fa-comment-dots fa-lg"></i>
-        <i class="fa-solid fa-music fa-lg"></i>
-        <i class="fa-solid fa-gear fa-lg"></i>
       </div>
     </header>
 
     <main class="main-screen">
-      <a href="chatting-room.html">
-        <div class="user-component">
-          <div class="user-component__column">
-            <img src="screenshots/aristol.png" class="user-component__img" />
-            <div class="user-component__text">
-              <h4 class="user-component__name">Mid Winter</h4>
-              <h6 class="user-component__subtitle">
-                Please check My KoKoa Account Info
-              </h6>
-            </div>
+      <ul class="settings-list">
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fa-solid fa-bullhorn"></i>
+            <span> Notices </span>
           </div>
-          <div class="user-component__column">
-            <span class="user-component__time">21:22</span>
-            <div class="badge">1</div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fa-solid fa-flask"></i>
+            <span> Kokoa Lab </span>
           </div>
-        </div>
-      </a>
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            src="https://static.boredpanda.com/blog/wp-content/uploads/2016/12/winter-fox-photography-4-585256d8cb933__880.jpg"
-            class="user-component__img"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__name">한겨울</h4>
-            <h6 class="user-component__subtitle">hello My name is 한겨울!</h6>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fa-solid fa-circle-info"></i>
+            <span> Version </span>
           </div>
-        </div>
-        <div class="user-component__column">
-          <span class="user-component__time">08:50</span>
-          <div class="badge">1</div>
-        </div>
-      </div>
+          <div class="settings__setting-column setting-column__text">
+            Lastest Version
+          </div>
+        </li>
+      </ul>
     </main>
 
     <nav class="nav">
@@ -79,7 +75,7 @@
         <li class="nav__btn">
           <a class="nav__link" href="chat.html">
             <span class="nav__notification badge">1</span
-            ><i class="fa-solid fa-comment fa-2x"></i
+            ><i class="fa-regular fa-comment fa-2x"></i
           ></a>
         </li>
         <li class="nav__btn">
