@@ -4,6 +4,7 @@
   font-weight: 600;
   display: flex;
   justify-content: center;
+  top: 0;
 }
 .status-bar__column {
   width: 33%;
