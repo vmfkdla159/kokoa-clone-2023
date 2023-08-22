@@ -15,13 +15,53 @@
   color: #2f363e;
   position: relative;
 }
+@keyframes notigicationAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px) rotateY(360deg);
+  }
+  100% {
+    transform: none;
+  }
+}
 .nav__notification {
   position: absolute;
   bottom: 17px;
   left: 20px;
+  animation: notigicationAnimation 2s ease-in-out infinite;
 }
 .nav__ellipsis {
   position: absolute;
   bottom: 30px;
   left: 30px;
+}
+
+@keyframes apperBtnAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.nav__btn {
+  transform: translateY(20px);
+  opacity: 0;
+  animation: apperBtnAnimation 1s ease-in-out forwards;
+}
+
+.nav__list li:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.nav__list li:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.nav__list li:last-child {
+  animation-delay: 1.5s;
 }

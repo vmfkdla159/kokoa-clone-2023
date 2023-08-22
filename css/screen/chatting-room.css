@@ -1,6 +1,10 @@
+#chatting-room-screen::-webkit-scrollbar {
+  display: none;
+}
+
 #chatting-room-screen {
   background-color: #abc1d1;
-  height: 10000vh;
+  height: 500vh;
 }
 
 #chatting-room-screen .alt-header {
@@ -23,11 +27,26 @@
   z-index: 1;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: none;
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
 .main-chat {
   margin-top: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .time-stamp {
@@ -78,8 +97,23 @@
   opacity: 0.6;
 }
 
+@keyframes message-row---ownFadeIn {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
 .message-row---own {
   justify-content: flex-end;
+  opacity: 0;
+  transform: translateX(50%);
+  animation: message-row---ownFadeIn 0.5s ease-in-out forwards;
+  animation-delay: 2s;
 }
 
 .message-row---own .message-row__bubble {
@@ -100,8 +134,10 @@
   bottom: 0px;
   background-color: white;
   width: 100%;
+  box-sizing: border-box;
   justify-content: space-between;
   align-items: center;
+  transition: all 0.3s ease-in-out;
 }
 
 .reply i {
@@ -119,7 +155,7 @@
 }
 
 .reply__column:last-child input {
-  width: 100%;
+  width: 98%;
   box-sizing: border-box;
   margin: 5px 5px;
   height: 50px;
@@ -131,7 +167,7 @@
 
 .reply__column:last-child button {
   position: absolute;
-  right: -2px;
+  right: 8px;
   bottom: 10px;
   border: none;
   border-radius: 50%;
@@ -153,4 +189,26 @@
   position: absolute;
   right: 55px;
   bottom: 15px;
+}
+
+.reply .fa-square-plus,
+.reply .fa-face-smile,
+.reply button {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.reply:focus-within .fa-square-plus,
+.reply:focus-within .fa-face-smile,
+.reply:focus-within button {
+  opacity: 0;
+}
+
+.reply:focus-within input {
+  width: 99vw;
+  transform: translateX(-11%) translateY(-80px);
+  transition: all 0.3s ease-in-out;
+}
+
+.reply:focus-within {
+  transform: translateY(80px);
 }

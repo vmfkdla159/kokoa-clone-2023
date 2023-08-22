@@ -19,3 +19,15 @@
   top: 55px;
   right: 20px;
 }
+
+@keyframes cogWheal {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+.friends-header__icons .fa-gear:hover {
+  animation: cogWheal 2s linear infinite;
+}
